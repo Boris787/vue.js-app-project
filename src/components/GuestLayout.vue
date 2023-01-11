@@ -1,11 +1,9 @@
 <template>
-  <router-view />
+  <div>
+    Loading Page
+  </div>
 </template>
 
 <script setup>
 
 </script>
-
-<style scoped>
-
-</style>
