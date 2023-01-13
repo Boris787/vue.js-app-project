@@ -14,13 +14,14 @@
             <h3 class="font-semibold">{{ meal.strMeal }}</h3>
             <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatem ad unde illo quaerat enim dolorum.</p>
             <div class="flex items-center justify-between">
-              <YouTubeButton :href="meal.strYoutube">YouTube</YouTubeButton>
+              <YouTubeButton :href="meal.strYoutube"> YouTube </YouTubeButton>
           </div>
           </div>
         </div>
 </template>
 
 <script setup>
+import YouTubeButton from '../components/YouTubeButton.vue'
 
 const { meal } = defineProps({
   meal: {
