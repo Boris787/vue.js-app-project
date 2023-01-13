@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="p-7 pb-0 ">
     <input 
       type="text"
@@ -7,10 +8,9 @@
       placeholder="Search for Meals"
       @change="searchMeals"
       >
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-7">
-        <MealItem v-for="meal of meals" :key="meal.idMeal" :meal="meal" />
-      </div>
     </div> 
+    <Meals :meals="meals" />
+</div>
 </template>
 
 <script setup>
@@ -19,6 +19,7 @@ import { useRoute } from 'vue-router';
 import store from '../store'
 import YouTubeButton from '../components/YouTubeButton.vue';
 import MealItem from '../components/MealItem.vue'
+import Meals from '../components/Meals.vue'
 
 
 const route = useRoute();
