@@ -2,7 +2,9 @@
     <div>
       <Navbar />
     <main>
-      <router-view />
+      <div>
+        <router-view />
+      </div>
     </main>
   </div>
 </template>

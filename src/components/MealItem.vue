@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white shadow rounded-xl">
+    <div class="bg-white shadow rounded-xl hover:scale-105 transition-all">
           <router-link
             v-if="typeof meal.idMeal !== 'undefined'"
             :to="{name: 'mealDetails', params: {id: meal.idMeal}}"
@@ -14,7 +14,7 @@
             <h3 class="font-semibold">{{ meal.strMeal }}</h3>
             <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatem ad unde illo quaerat enim dolorum.</p>
             <div class="flex items-center justify-between">
-              <YouTubeButton :href="meal.strYoutube"> YouTube </YouTubeButton>
+              <YouTubeButton :href="meal.strYoutube" />
           </div>
           </div>
         </div>
